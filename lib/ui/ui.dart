@@ -5,3 +5,4 @@ part 'gudang.dart';
 part 'login.dart';
 part 'clipL.dart';
 part 'showItems.dart';
+part 'test.dart';

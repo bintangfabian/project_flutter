@@ -89,10 +89,44 @@ class _PostState extends State<Post> {
                                 ),
                                 Expanded(
                                   child: Container(
+                                    alignment: Alignment.topLeft,
                                     height:
                                         MediaQuery.of(context).size.height * 1,
                                     margin: EdgeInsets.only(
                                         top: 15, bottom: 15, right: 15),
+                                    child: Column(
+                                      children: [
+                                        Container(
+                                          height: 35,
+                                          width: MediaQuery.of(context)
+                                                  .size
+                                                  .width *
+                                              1,
+                                          child: Text(
+                                            dataPostOk[i].title,
+                                            style: TextStyle(
+                                                fontSize: 15,
+                                                fontWeight: FontWeight.bold),
+                                          ),
+                                        ),
+                                        SizedBox(
+                                          height: 5,
+                                        ),
+                                        Expanded(
+                                            child: Container(
+                                          width: MediaQuery.of(context)
+                                                  .size
+                                                  .width *
+                                              1,
+                                          child: Text(
+                                            "data",
+                                            style: TextStyle(
+                                              fontSize: 10,
+                                            ),
+                                          ),
+                                        ))
+                                      ],
+                                    ),
                                   ),
                                 )
                               ]),

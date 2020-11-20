@@ -88,7 +88,13 @@ class Gudang extends StatelessWidget {
                                 ),
                               ),
                               GestureDetector(
-                                onTap: () {},
+                                onTap: () {
+                                  Navigator.push(
+                                      context,
+                                      MaterialPageRoute(
+                                          builder: (BuildContext context) =>
+                                              Bulet()));
+                                },
                                 child: Container(
                                   margin: EdgeInsets.only(top: 10, bottom: 20),
                                   width: 140,
